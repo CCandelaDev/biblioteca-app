@@ -14,7 +14,7 @@ Esta es una aplicación de gestión de una biblioteca desarrollada en Java utili
 
  1. Clona el repositorio de GitHub (Opcional)
 
- 	`git clone https://github.com/CCandelaDev/biblioteca-app.git´
+ 	git clone https://github.com/CCandelaDev/biblioteca-app.git
 
  2. Importa el proyecto en tu IDE como un proyecto Maven.
 
