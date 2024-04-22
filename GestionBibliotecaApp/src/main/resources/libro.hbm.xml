@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<!-- Mapeo de la clase Libro-->
+<hibernate-mapping>
+	
+	<class name="biblioteca.Libro" table="libro" catalog="biblioteca">
+		<id name="id" type="java.lang.Long">
+			<column name="id_libro" />
+			<generator class="identity" />
+		</id>
+		
+		<property name="titulo" column="titulo"/>
+		<property name="autor" column="autor"/>
+		<property name="anioPublicacion" column="anio_publicacion" type="int"/>
+		<property name="disponible" column="disponible" type="boolean"></property>		
+	</class>
+		
+</hibernate-mapping>   

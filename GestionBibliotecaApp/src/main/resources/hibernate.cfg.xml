@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Reglas que tenemos que seguir en el archivo de configuracion-->
+<hibernate-configuration>
+
+	<session-factory>
+
+		<!-- Configuración de la conexión a la base de datos -->
+		<property name="hibernate.connection.driver_class">
+			com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost:3307/biblioteca</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+		
+		<!-- Configuración de la generación del esquema-->
+		<property name="hbm2ddl.auto">update</property>
+
+		<!-- Configuración del dialecto de la base de datos -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		
+		<!-- Configuración mostrar sentencia sql-->
+		<property name="show_sql">true</property>
+
+		<!-- Ruta de Configuración del mapeo de clases de entidad -->
+		<mapping resource="libro.hbm.xml" />
+		<mapping resource="lector.hbm.xml" />
+		<mapping resource="prestamo.hbm.xml" />
+
+
+	</session-factory>
+
+
+</hibernate-configuration>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- Mapeo de la clase Prestamo-->
+<hibernate-mapping>
+
+	<class name="biblioteca.Prestamo" table="prestamo" catalog="biblioteca">
+		<id name="id" type="java.lang.Long">
+			<column name="id_prestamo" />
+			<generator class="identity" />
+		</id>
+
+		<property name="fechaPrestamo" column="fecha_prestamo" type="java.util.Date"/>
+		<property name="fechaDevolucion" column="fecha_devolucion" type="java.util.Date" />
+		<many-to-one name="libro" class="biblioteca.Libro" column="libro_id"></many-to-one>
+		<many-to-one name="lector" class="biblioteca.Lector" column="lector_id"></many-to-one>
+
+	</class>
+
+</hibernate-mapping>    
