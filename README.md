@@ -151,5 +151,5 @@ Esta opción te permite realizar diversas operaciones relacionadas con la gesti�
 	- Verifico que el libro no sea nulo.
 	- Compruebo que el título, autor y año de publicación del libro coincidan con los valores que espero.
 
- El fuente de la prueba unitaria se encuentra en el archivo **GestorLibrosTest.java**, en el directorio **src\main\java\gestion** del proyecto.
+ El código de la prueba unitaria se encuentra en el archivo **GestorLibrosTest.java**, en el directorio **src\main\java\gestion** del proyecto.
 
