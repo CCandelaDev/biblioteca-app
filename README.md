@@ -20,13 +20,13 @@ Esta es una aplicación de gestión de una biblioteca desarrollada en Java utili
 
  3. Configuración de Hibernate:
 
-	En el directorio src/main/resources, se encuentra el archivo hibernate.cfg.xml
+	En el directorio src/main/resources, se encuentra el archivo **hibernate.cfg.xml**
 
 	Asegúrate de que los parámetros de conexión a la base de datos estén configurados correctamente:
 	
-	- hibernate.connection.url: La URL de conexión a la base de datos.
-	- hibernate.connection.username: Nombre de usuario de la base de datos.
-	- hibernate.connection.password: Contraseña de la base de datos.
+	- **hibernate.connection.url:** La URL de conexión a la base de datos.
+	- **hibernate.connection.username:** Nombre de usuario de la base de datos.
+	- **hibernate.connection.password:** Contraseña de la base de datos.
 
 	Si estás utilizando una base de datos diferente a MySQL, asegúrate de cambiar
 	 el dialecto Hibernate correspondiente en la propiedad hibernate.dialect
@@ -54,6 +54,13 @@ Esta es una aplicación de gestión de una biblioteca desarrollada en Java utili
 
 Al ejecutar la aplicación, se mostrará un menú con varias opciones:
 
+1. Gestión de Libros
+2. Gestión de Lectores
+3. Gestión de préstamos
+4. Consultas
+5. Salir
+
+
 
 ### Gestion de libros:
 
@@ -70,6 +77,8 @@ Esta opción te permite realizar diversas operaciones relacionadas con la gesti�
 
 	Borrar libro: Permite eliminar un libro de la base de datos. Debes proporcionar el ID del libro que deseas eliminar.	
 
+ 	Volver al menú pricipal: Permite regresar al menú principal de la aplicación.
+
 
 ### Gestión de Lectores:
 
@@ -84,6 +93,8 @@ Esta opción te permite realizar diversas operaciones relacionadas con la gesti�
 
 	Borrar lector: Permite eliminar un lector de la base de datos. Debes proporcionar el ID del lector que deseas eliminar.
 
+ 	Volver al menú pricipal: Permite regresar al menú principal de la aplicación.
+
 
 ### Gestión de Prestamos:
 
@@ -93,6 +104,8 @@ Esta opción te permite realizar diversas operaciones relacionadas con la gesti�
 
 	Registrar devolución: Permite registrar la devolución de un libro por parte de un lector, actualizando el estado del préstamo en la base de datos. 
 	Debes proporcionar el ID del préstamo que deseas registrar como devuelto.
+
+ 	Volver al menú pricipal: Permite regresar al menú principal de la aplicación.
 
 
 ### Consultas:
@@ -104,6 +117,8 @@ Esta opción te permite realizar diversas operaciones relacionadas con la gesti�
 	Libros disponibles para préstamo: Muestra los libros que están disponibles para préstamo en la biblioteca.
 
 	Historial de préstamos por lector: Muestra el historial de préstamos de un lector específico. Debes proporcionar el ID del lector para realizar la consulta.
+
+ 	Volver al menú pricipal: Permite regresar al menú principal de la aplicación.
 
 	Sigue las instrucciones en pantalla para interactuar con la aplicación y selecciona la opción deseada en el menú principal para 
 	realizar las operaciones correspondiente.
@@ -135,4 +150,6 @@ Esta opción te permite realizar diversas operaciones relacionadas con la gesti�
 	Después de insertar el libro, verificamos que se haya guardado correctamente en la base de datos:
 	- Verifico que el libro no sea nulo.
 	- Compruebo que el título, autor y año de publicación del libro coincidan con los valores que espero.
+
+ El fuente de la prueba unitaria se encuentra en el archivo **GestorLibrosTest.java**, en el directorio **src\main\java\gestion** del proyecto.
 
